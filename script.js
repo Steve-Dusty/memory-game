@@ -12,7 +12,7 @@ const cards = [
     },
     {
         image: true,
-        content: "images/dog",
+        content: "images/dog.jpeg",
         relationship_id: 1
     },
     {
@@ -22,7 +22,7 @@ const cards = [
     },
     {
         image: true,
-        content: "images/cat",
+        content: "images/cat.jpg",
         relationship_id: 2
     },
     {
@@ -32,7 +32,7 @@ const cards = [
     },
     {
         image: true,
-        content: "images/ball",
+        content: "images/ball.jpg",
         relationship_id: 3
     }
 ]
