@@ -1,0 +1,37 @@
+#card {
+    padding: 20px;
+    margin: 20px;
+    width: 75px;
+    height: 75px;
+    color: black;
+    border: solid black;
+    border-width: 0.5px;
+    text-align: center;
+}
+
+#board {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em
+}
+
+.button {
+    margin-top: 2em;
+    text-align: center;
+}
+
+button {
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2d3748;
+    border: 1px solid #cbd5e0;
+    line-height: 26px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06);
+}
