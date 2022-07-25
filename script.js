@@ -1,40 +1,90 @@
 document.body.onload = makeBoard;
 
-const BOARD_ROWS = 3
+const BOARD_ROWS = 4
 
 // You can configure your cards here.
 // If two cards have the matching `relationship_id`, they are a pair.
 const cards = [
     {
         image: false,
-        content: "Dog",
+        content: "Glasses",
         relationship_id: 1
     },
     {
         image: true,
-        content: "images/dog.jpeg",
+        content: "images/glasses.png",
         relationship_id: 1
     },
     {
         image: false,
-        content: "Cat",
+        content: "Hat",
         relationship_id: 2
     },
     {
         image: true,
-        content: "images/cat.jpg",
+        content: "images/hat.jpeg",
         relationship_id: 2
     },
     {
         image: false,
-        content: "Ball",
+        content: "Mask",
         relationship_id: 3
     },
     {
         image: true,
-        content: "images/ball.jpg",
+        content: "images/mask.jpeg",
         relationship_id: 3
-    }
+    },
+    {
+        image: false,
+        content: "pants",
+        relationship_id: 4
+    },
+    {
+        image: true,
+        content: "images/pants.jpeg",
+        relationship_id: 4
+    },
+    {
+        image: false,
+        content: "shirt",
+        relationship_id: 5
+    },
+    {
+        image: true,
+        content: "images/shirt.jpeg",
+        relationship_id: 5
+    },
+    {
+        image: false,
+        content: "shoes",
+        relationship_id: 6
+    },
+    {
+        image: true,
+        content: "images/shoes.jpg",
+        relationship_id: 6
+    },
+    {
+        image: false,
+        content: "shorts",
+        relationship_id: 7
+    },
+    {
+        image: true,
+        content: "images/shorts.jpeg",
+        relationship_id: 7
+    },
+    {
+        image: false,
+        content: "tshirt",
+        relationship_id: 8
+    },
+    {
+        image: true,
+        content: "images/tshirt.jpeg",
+        relationship_id: 8
+    },
 ]
 
 const board = document.getElementById('board')
@@ -70,7 +120,7 @@ function flipCard(evt) {
             if (flipCount < 2) {
                 el.style.removeProperty('background-color')
                 if (cards[domEl.indexOf(el)].image == true) {
-                    if (imgCount == 0) {
+                    // if imgCount == 0 makes image not work
                         let img = document.createElement('img')
                         img.style.width = "100%"
                         img.style.height = "100%"
@@ -78,7 +128,7 @@ function flipCard(evt) {
                         img.setAttribute("src", cards[domEl.indexOf(el)].content)
                         el.appendChild(img)
                         imgCount++
-                    }
+    
                 }
                 else {
                     el.textContent = cards[domEl.indexOf(el)].content
